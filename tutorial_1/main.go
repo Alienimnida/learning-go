@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"unicode/utf8"
+)
 
 func main() {
 	//fmt.Println("Hello World!")
@@ -21,4 +24,28 @@ func main() {
 	var intNum2 int = 2
 	fmt.Println(intNum1 / intNum2)
 	fmt.Println(intNum1 % intNum2)
+
+	var myString string = "Hello \nWorld"
+	fmt.Println(myString)
+	fmt.Println(len(myString))
+
+	fmt.Println(utf8.RuneCountInString("Y"))
+
+	var myRune rune = 'a'
+	fmt.Println(myRune)
+
+	var myBoolean bool = false
+	fmt.Println(myBoolean)
+
+	var intNum3 int
+	fmt.Println(intNum3)
+
+	myVar := "text"
+	fmt.Println(myVar)
+
+	var1, var2 := 1, 2
+	fmt.Println(var1, var2)
+
+	const myConst string = "const value"
+	fmt.Println(myConst)
 }
